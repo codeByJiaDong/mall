@@ -106,7 +106,7 @@ public class JwtTokenUtil
      * @param userDetails
      * @return
      */
-    private boolean validateToken(String token, UserDetails userDetails){
+    public boolean validateToken(String token, UserDetails userDetails){
         String userNameFromToken = getUserNameFromToken(token);
         //条件 有两个
         //条件一 token 取出来的用户名 和 spring当前线程 中的用户名是不是一样的。

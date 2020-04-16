@@ -12,6 +12,7 @@
         <module>mall-common</module>
         <module>mall-mbg</module>
         <module>mall-security</module>
+        <module>mall-admin</module>
     </modules>
 
 
@@ -79,22 +80,22 @@
         <dependencies>
             <!--mall通用模块-->
             <dependency>
-                <groupId>com.macro.mall</groupId>
+                <groupId>com.mall</groupId>
                 <artifactId>mall-common</artifactId>
                 <version>${mall-common.version}</version>
             </dependency>
-           <!-- &lt;!&ndash;mall中MBG生成模块&ndash;&gt;
+            <!--mall中MBG生成模块-->
             <dependency>
-                <groupId>com.macro.mall</groupId>
+                <groupId>com.mall</groupId>
                 <artifactId>mall-mbg</artifactId>
                 <version>${mall-mbg.version}</version>
             </dependency>
-            &lt;!&ndash;mall安全模块&ndash;&gt;
+            <!--mall安全模块-->
             <dependency>
                 <groupId>com.macro.mall</groupId>
                 <artifactId>mall-security</artifactId>
                 <version>${mall-security.version}</version>
-            </dependency>-->
+            </dependency>
             <!--MyBatis分页插件starter-->
             <dependency>
                 <groupId>com.github.pagehelper</groupId>
@@ -181,17 +182,4 @@
         </dependencies>
     </dependencyManagement>
 
-    <build>
-        <plugins>
-            <plugin>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-maven-plugin</artifactId>
-                <version>2.2.5.RELEASE</version>
-                <configuration>
-                    <fork>true</fork>
-                    <addResources>true</addResources>
-                </configuration>
-            </plugin>
-        </plugins>
-    </build>
 </project>

@@ -3,40 +3,40 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
-        <groupId>com.mall</groupId>
         <artifactId>mall</artifactId>
+        <groupId>com.mall</groupId>
         <version>1.0-SNAPSHOT</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
+
     <groupId>com.macro.mall</groupId>
-    <artifactId>mall-security</artifactId>
+    <artifactId>mall-admin</artifactId>
     <version>1.0-SNAPSHOT</version>
     <packaging>jar</packaging>
 
-    <name>mall-security</name>
-    <description>mall-security project for mall</description>
+    <name>mall-admin</name>
+    <description>mall-admin project for mall</description>
 
     <dependencies>
         <dependency>
             <groupId>com.mall</groupId>
-            <artifactId>mall-common</artifactId>
+            <artifactId>mall-mbg</artifactId>
         </dependency>
         <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-web</artifactId>
+            <groupId>com.macro.mall</groupId>
+            <artifactId>mall-security</artifactId>
         </dependency>
         <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-security</artifactId>
+            <groupId>com.aliyun.oss</groupId>
+            <artifactId>aliyun-sdk-oss</artifactId>
         </dependency>
         <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-data-redis</artifactId>
+            <groupId>net.logstash.logback</groupId>
+            <artifactId>logstash-logback-encoder</artifactId>
         </dependency>
         <dependency>
-            <groupId>io.jsonwebtoken</groupId>
-            <artifactId>jjwt</artifactId>
+            <groupId>io.minio</groupId>
+            <artifactId>minio</artifactId>
         </dependency>
     </dependencies>
-
 </project>
